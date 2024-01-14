@@ -3,6 +3,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-family: 'Work Sans', sans-serif;
+    margin: 0;
 }
 
 header {
@@ -13,13 +14,13 @@ header {
 .nav-tittle {
     color: #131313;
     font-size: 45px;
-    font-style: normal;
     font-weight: 700;
 }
 
 .navigation-bar {
     display: flex;
     justify-content: space-between;
+
 }
 
 .navigation-bar li {
@@ -45,9 +46,9 @@ header {
 }
 
 .banner-content {
-   max-width: 800px;
-   text-align: center;
-   margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .banner-tittle {
@@ -72,7 +73,132 @@ header {
     border-radius: 8px;
     background: #FF900E;
     font-size: 20px;
-    color:#FFF;
+    color: #FFF;
     font-weight: 600px;
     text-align: center;
+    border: 0;
+}
+
+.banner-image img {
+    width: 100%;
+    width: 100%;
+    margin: 50px auto;
+}
+
+/*body styling*/
+.body-1 {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 100px 0;
+}
+
+.img-container img {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+   
+}
+.img-container img:hover{
+    border: 2px solid blue;
+    border-radius: 20px;
+}
+
+.img-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: auto 0;
+}
+
+.body-tittle {
+    color: #727272;
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.body-para {
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    width: 537px;
+}
+
+.text-container {
+    margin: auto 0;
+}
+
+/*Responsive media query for mobile*/
+
+@media screen and (max-width: 576px) {
+    .header {
+        padding: 20px;
+    }
+
+    .navigation-bar {
+        flex-direction: column;
+    }
+
+    .navigation-bar li {
+
+        padding-right: 20px;
+    }
+
+    .navigation-bar ul li a {
+        font-size: 12px;
+        font-weight: 200px;
+        line-height: 15px;
+
+    }
+
+    header {
+        padding: 5px;
+        margin: 0;
+    }
+
+    .banner-tittle {
+        font-size: 25px;
+        font-weight: 100px;
+    }
+
+    .banner-para {
+        font-size: 16px;
+        font-weight: 200;
+    }
+    /*body part*/
+    .body-1{
+        flex-direction: column;
+        padding: 5px;
+    }
+    .img-container{
+        flex-direction: column;
+    }
+    .body-para{
+        width: 100%;
+    }
+
+}
+
+/*media query for medium device*/
+
+@media screen and (min-width: 576px) and (max-width: 1015px) {
+    header {
+        padding: 20px;
+    }
+
+    .navigation-bar {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /*body part*/
+    .body-1{
+        flex-direction: column;
+        padding: 5px;
+    }
+    
+    .body-para{
+        width: 100%;
+    }
+
 }
