@@ -86,6 +86,11 @@ header {
 }
 
 /*body styling*/
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 .body-1 {
     display: flex;
     justify-content: space-evenly;
@@ -96,9 +101,10 @@ header {
     display: block;
     margin-bottom: 10px;
     width: 100%;
-   
+
 }
-.img-container img:hover{
+
+.img-container img:hover {
     border: 2px solid blue;
     border-radius: 20px;
 }
@@ -127,6 +133,118 @@ header {
 .text-container {
     margin: auto 0;
 }
+
+.body-container {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.body-caption {
+    color: #727272;
+    font-size: 16px;
+
+
+}
+
+.body-2 {
+
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.body-2-para {
+    width: 45%;
+}
+
+.body-container {
+    width: 586px;
+    height: 171px;
+}
+
+.body-section {
+    background-image: url('/images/architect.png');
+    background-repeat: no-repeat;
+    width: 708px;
+    height: 982px;
+    flex-shrink: 0;
+    padding: 45px;
+}
+
+#body-sectionn {
+    width: 342px;
+    height: 200px;
+    border-radius: 8px;
+    background: #FF900E;
+
+}
+
+.body-section-tittle {
+    color: #FFF;
+    text-align: center;
+    font-size: 65px;
+
+
+}
+
+#body-sectionn p {
+    color: #FFF;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+.body-2-para {
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.body-2-tittle {
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+    width: 468px;
+}
+
+.section-tittle {
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.text-lightgray {
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+   
+}
+/*fact section*/
+.fact-card-container{
+    display: flex;
+    justify-content: space-around;
+}
+.fact-card-container .card{
+    border-radius: 8px;
+    border:1px solid #FF900E;
+    text-align: center;
+
+}
+.fact-card-container .card-state{
+   font-size: 2.8rem;
+   color:#424242;
+   margin-top: 10px;
+   margin-bottom:10px ;
+}
+.fact-card-container .card-tittle{
+    font-weight: 600;
+    color:rgb(161, 155, 155);
+    font-size: 1.25rem;
+
+}
+
 
 /*Responsive media query for mobile*/
 
@@ -165,15 +283,18 @@ header {
         font-size: 16px;
         font-weight: 200;
     }
+
     /*body part*/
-    .body-1{
+    .body-1 {
         flex-direction: column;
         padding: 5px;
     }
-    .img-container{
+
+    .img-container {
         flex-direction: column;
     }
-    .body-para{
+
+    .body-para {
         width: 100%;
     }
 
@@ -192,12 +313,12 @@ header {
     }
 
     /*body part*/
-    .body-1{
+    .body-1 {
         flex-direction: column;
         padding: 5px;
     }
-    
-    .body-para{
+
+    .body-para {
         width: 100%;
     }
 
